@@ -1,1 +1,1 @@
-# mobius_js
+# mobius-js

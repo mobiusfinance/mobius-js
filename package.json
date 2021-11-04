@@ -1,0 +1,38 @@
+{
+  "name": "@mobius/api",
+  "version": "1.0.0",
+  "description": "JavaScript library for mobius.finance",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "cross-env TS_NODE_PROJECT='test/tsconfig.test.json' mocha test/**.test.ts",
+    "build": "rm -rf lib && tsc -p tsconfig.build.json"
+  },
+  "author": "Mobius team",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.18",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.37",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "chai": "^4.3.4",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.23.0",
+    "mocha": "^8.4.0",
+    "ts-node": "^10.2.1",
+    "tsconfig-paths": "^3.11.0",
+    "typescript": "^4.3.5",
+    "dotenv": "^10.0.0"
+  },
+  "dependencies": {
+    "bignumber.js": "^9.0.1",
+    "ethers": "^5.1.0"
+  },
+  "mocha": {
+    "require": [
+      "ts-node/register",
+      "tsconfig-paths/register"
+    ],
+    "ui": "bdd"
+  }
+}
